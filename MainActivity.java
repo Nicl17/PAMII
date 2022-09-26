@@ -15,18 +15,22 @@ public class MainActivity extends AppCompatActivity {
         myButtonListenerMethod();
         ConstraintLayout bgElement = (ConstraintLayout) findViewById(R.id.bgElement);
         bgElement.setBackgroundColor(Color.RED);
+        myButtonListenerMethod();
     }
     public void myButtonListenerMethod() {
         final Button button = (Button) findViewById(R.id.mybutton);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ConstraintLayout bgElement = (ConstraintLayout) findViewById(R.id.bgElement);
+                ConstraintLayout bgElement = (ConstraintLayout) findViewById(R.id.activity_main);
                 int color = ((ColorDrawable) bgElement.getBackground()).getColor();
                 if (color == Color.RED) {
                     bgElement.setBackgroundColor(Color.BLUE);
+                    button.setText("RED");
                 } else {
                     bgElement.setBackgroundColor(Color.RED);
+                    button.setText("BLUE");
+                    
                 }
             }
         });
