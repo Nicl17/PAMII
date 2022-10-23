@@ -1,3 +1,3 @@
 # PAMII
 
-Repositório de atividades de um curso.
+Grupo: Guilherme dos Santos Salustiano, Guilherme Enrique Oliveira de Andrade, Nicholas Lopes de Almeida
